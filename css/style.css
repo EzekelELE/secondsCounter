@@ -1,0 +1,112 @@
+/* path{
+    fill: brown;
+    width: 50%;
+    stroke-dasharray: 821.6;
+    transition: 2s;
+    stroke: blue;
+    
+}
+
+
+svg:hover path{
+    
+    animation: move2 2s linear forwards;
+    transition: 2s;
+}
+
+@keyframes move2 {
+    
+    100%{
+        stroke-dashoffset: 821.6;
+    }
+}
+
+svg:hover circle{
+    offset-path: path("M66.039,133.545c0,0-21-57,18-67s49-4,65,8s30,41,53,27s66,4,58,32s-5,44,18,57s22,46,0,45s-54-40-68-16s-40,88-83,48s11-61-11-80s-79-7-70-41  C46.039,146.545,53.039,128.545,66.039,133.545z");
+    animation: move 2s linear reverse forwards;
+}
+ */
+
+ svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: visible;
+ }
+
+ #path{
+     
+     stroke-width: 10px;
+     fill: none;
+     stroke-dasharray: 832.2;
+     stroke-dashoffset: 832.2;
+     filter: drop-shadow( 0px 0px 20px rgba(255, 255, 255, 0.7));
+     transform: rotateZ(-90deg);
+     transform-origin: center;
+     
+     
+ }
+
+ .rapper{
+     position: relative;
+     width: 25vw;
+     height: 25vw;
+     
+ }
+
+ body{
+     background: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+ .playanimation{
+    animation: move 1s ease infinite;
+   
+ }
+
+ @keyframes move {
+     0%{
+        stroke-dashoffset: 832.2;
+     }
+     100%{
+        stroke-dashoffset: 0;
+     }
+     
+ }
+
+ .outputrapper{
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     font-size: 2rem;
+     display: flex;
+     color: white;
+ }
+
+
+
+ .output2{
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 40px;
+     height: 40px;
+     top: 49%;
+     left: 62%;
+     font-size: 2rem;
+     text-align: center;
+     line-height: 40px;
+ }
+
+ #circle2{
+     fill: transparent;
+     stroke-width: 10px;
+    
+    transform: rotateZ(-90deg);
+    transform-origin: center;     
+ }
